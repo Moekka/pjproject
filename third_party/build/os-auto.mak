@@ -78,7 +78,7 @@ ifeq (0,1)
 # External webrtc
 else
 DIRS += webrtc
-WEBRTC_OTHER_CFLAGS = -fexceptions -DWEBRTC_POSIX=1 
+WEBRTC_OTHER_CFLAGS = -march=pentium4 -mmmx -fexceptions -DWEBRTC_POSIX=1 
 ifneq ($(findstring sse2,sse2),)
     WEBRTC_SRC = \
     	      modules/audio_processing/aec/aec_core_sse2.o		 \
